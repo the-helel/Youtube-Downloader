@@ -6,36 +6,36 @@ youtube_url = input("Please enter a YouTube link:")
 
 
 # Creating Object
-yt = YouTube(youtube_url)
+youtube_obj = YouTube(youtube_url)
 
 # Title of Video
-print("Title: " + yt.title)
+print("Title: " + youtube_obj.title)
 
 
 # Duration of Video
-print("Duration: " + str(yt.length))
+print("Duration: " + str(youtube_obj.length))
 
 
 # Thumbnail Url of Video
-print("Thumbnail Link: " + yt.thumbnail_url)
+print("Thumbnail Link: " + youtube_obj.thumbnail_url)
 
 
 # Description of vide
-print("Description: " + yt.description)
+print("Description: " + youtube_obj.description)
 
 
 # Views on Video
-print("Views: " + str(yt.views))
+print("Views: " + str(youtube_obj.views))
 
 # Checking Age Restriction
-print("Age Restricted: " + str(yt.age_restricted))
+print("Age Restricted: " + str(youtube_obj.age_restricted))
 
 # Getting Video ID
-print("Video ID: " + yt.video_id)
+print("Video ID: " + youtube_obj.video_id)
 
 
 # First Stream to Download
-first_stream = yt.streams.first()
+first_stream = youtube_obj.streams.first()
 print("First Stream is " + str(first_stream))
 
 # Path To Save Video ---You can add your own path 
